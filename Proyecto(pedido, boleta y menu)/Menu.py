@@ -6,7 +6,7 @@ if TYPE_CHECKING:
 
 class Menu:
     """representa un menu ofrecido por el restaurante, con su precio, receta 
-    y la ruta opcional a una imagen."""
+    y la ruta opcional a una imagen"""
 
     def __init__(self, nombre: str, precio: float, receta: List[Tuple[str, float]], imagen_path: str = ""):
         self.nombre = nombre.strip().capitalize()
@@ -24,7 +24,7 @@ class Menu:
         return self.disponible
     
     def disponible_stock(self, stock_obj: 'Stock', cantidad: int = 1) -> bool:
-        """verifica si hay suficiente stock para preparar una 'cantidad' de este menu"""
+        """verifica si hay suficiente stock para preparar una "cantidad" de este menu"""
         # calcular los requerimientos totales:
         receta_total = [
             (nombre, cantidad_por_menu * cantidad) 
