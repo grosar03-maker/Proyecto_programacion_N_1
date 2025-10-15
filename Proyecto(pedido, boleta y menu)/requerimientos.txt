@@ -1,0 +1,41 @@
+############################################################
+#          LIBRERÍAS PARA INSTALAR (Comando PIP)           #
+############################################################
+
+# Copia y pega esta única línea en tu terminal (CMD, PowerShell, etc.)
+# para instalar todas las dependencias externas que el programa necesita.
+
+pip install customtkinter fpdf2 PyMuPDF Pillow
+
+
+############################################################
+#      LISTA COMPLETA DE IMPORTS USADOS EN EL PROYECTO     #
+############################################################
+
+# Estos son todos los 'import' que se utilizan a lo largo de los
+# diferentes archivos .py del programa.
+
+# --- Librerías Externas (Instaladas con pip) ---
+import customtkinter as ctk
+from fpdf import FPDF
+import fitz  # PyMuPDF
+from PIL import Image
+
+
+# --- Librerías Estándar de Python (Vienen incluidas, no se instalan) ---
+import tkinter as tk
+from tkinter import ttk, filedialog, messagebox
+import csv
+import os
+import subprocess
+from datetime import datetime
+from collections import Counter
+
+
+# --- Imports de los archivos propios del proyecto ---
+from Ingrediente import Ingrediente
+from Stock import Stock
+from Menu import Menu
+from Pedido import Pedido
+from Menupdf import MenuPDF
+from Boleta import BoletaPDF
